@@ -1,0 +1,75 @@
+---
+title: "assignment4packages: Exploring Common Names"
+author: "Trisha Aurielle Andrea"
+date: "2025-10-19"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{assignment4packages: Exploring Common Names}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+collapse = TRUE,
+comment  = "#>",
+fig.width = 7,
+fig.height = 4.5,
+message = FALSE,
+warning = FALSE
+)
+```
+
+
+```{r}
+library(assignment4packages)
+
+# install.packages("remotes")
+remotes::install_github("ETC5523-2025/assignment-4-packages-and-shiny-apps-trishaandrea")
+```
+
+```{r}
+csv_path <- system.file(
+  "extdata",
+  "adjusted-name-combinations-list.csv",
+  package = "assignment4packages"
+)
+
+names_data <- read.csv(csv_path, check.names = FALSE)
+head(names_data)
+```
+
+```{r}
+summarize_data(names_data)
+```
+
+Visualise the most common first names in the dataset.
+```{r}
+library(dplyr)
+library(ggplot2)
+
+top10 <- names_data |>
+  select(FirstName, Estimate) |>
+  filter(!is.na(FirstName), !is.na(Estimate)) |>
+  arrange(desc(Estimate)) |>
+  slice_head(n = 10)
+
+ggplot(top10, aes(x = reorder(FirstName, Estimate), y = Estimate)) +
+  geom_col() +
+  coord_flip() +
+  labs(
+    x = "First name",
+    y = "Estimate (count / frequency)",
+    title = "Top 10 first names by Estimate"
+  )
+```
+How to interpret: Taller bars indicate names that appear more frequently according to the chosen count column.
+Try switching to finalEstimate if you prefer the adjusted totals.
+
+```{r}
+run_app()
+```
+
+```{r}
+sessionInfo()
+```
