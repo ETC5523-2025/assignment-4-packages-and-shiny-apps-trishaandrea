@@ -26,11 +26,12 @@ run_app()
 
 library(assignment4packages)
 
-# Load the packaged dataset path and read it
+## Load the packaged dataset path and read it
 csv_path <- system.file("extdata", "adjusted-name-combinations-list.csv",
                         package = "assignment4packages")
 dat <- read.csv(csv_path, check.names = FALSE)
 
-# Quick summary (function provided in the package)
+## Quick summary (function provided in the package)
+dat <- get_names_data() 
 summarize_data(dat)
 
