@@ -6,6 +6,9 @@ template:
 home:
   title: Most Common Name Explorer
   description: Interactive tools and data to rank common names; includes a Shiny app and helper functions.
+    links:
+    - text: "📦 Source code"
+      href: https://github.com/ETC5523-2025/assignment-4-packages-and-shiny-apps-trishaandrea
 
 navbar:
   title: trishaandrea
