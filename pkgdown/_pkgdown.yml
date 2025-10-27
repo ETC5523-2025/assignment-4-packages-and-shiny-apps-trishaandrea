@@ -8,7 +8,7 @@ home:
   description: Interactive tools and data to rank common names; includes a Shiny app and helper functions.
 
 navbar:
-  title: yourrepo
+  title: trishaandrea
   left:
     - text: "Get started"
       href: articles/getting-started.html
