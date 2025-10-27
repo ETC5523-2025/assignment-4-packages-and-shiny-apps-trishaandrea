@@ -6,6 +6,8 @@ Shiny app to explore name frequencies.
 
 **Data source:** [FiveThirtyEight “Most Common Name” dataset](https://github.com/fivethirtyeight/data/tree/master/most-common-name)
 
+📖 **Documentation website:** https://ETC5523-2025.github.io/assignment-4-packages-and-shiny-apps-trishaandrea/
+
 ## Installation
 
 

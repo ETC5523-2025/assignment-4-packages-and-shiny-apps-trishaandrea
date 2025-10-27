@@ -1,0 +1,19 @@
+url: https://etc5523-2025.github.io/assignment-4-packages-and-shiny-apps-trishaandrea
+template:
+  bootstrap: 5
+  bootswatch: flatly
+
+home:
+  title: Most Common Name Explorer
+  description: Interactive tools and data to rank common names; includes a Shiny app and helper functions.
+
+navbar:
+  title: yourrepo
+  left:
+    - text: "Get started"
+      href: articles/getting-started.html
+    - text: "Reference"
+      href: reference/index.html
+    - text: "Shiny app"
+      href: articles/getting-started.html#launch-the-interactive-dashboard
+

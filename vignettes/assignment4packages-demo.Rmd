@@ -22,9 +22,14 @@ warning = FALSE
 
 
 ```{r}
+suppressPackageStartupMessages({
 library(assignment4packages)
+library(dplyr)
+library(ggplot2)
+})
+```
 
-# install.packages("remotes")
+```{r,eval=FALSE}
 remotes::install_github("ETC5523-2025/assignment-4-packages-and-shiny-apps-trishaandrea")
 ```
 
@@ -40,6 +45,8 @@ head(names_data)
 ```
 
 ```{r}
+names_data <- names_data[, nzchar(names(names_data)), drop = FALSE]
+colnames(names_data)
 summarize_data(names_data)
 ```
 
@@ -67,7 +74,9 @@ How to interpret: Taller bars indicate names that appear more frequently accordi
 Try switching to finalEstimate if you prefer the adjusted totals.
 
 ```{r}
-run_app()
+if (interactive()) {
+  run_app()
+}
 ```
 
 ```{r}
