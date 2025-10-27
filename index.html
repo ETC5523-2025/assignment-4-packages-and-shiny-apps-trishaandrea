@@ -60,22 +60,27 @@
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
 <p>You can install the development version of the package from GitHub with:</p>
-<p>```r # install.packages(“remotes”) remotes::install_github(“ETC5523-2025/assignment-4-packages-and-shiny-apps-trishaandrea”)</p>
 </div>
 <div class="section level2">
-<h2 id="launch-the-app">Launch the app<a class="anchor" aria-label="anchor" href="#launch-the-app"></a>
+<h2 id="installpackagesremotes">install.packages(“remotes”)<a class="anchor" aria-label="anchor" href="#installpackagesremotes"></a>
 </h2>
+<p>remotes::install_github(“ETC5523-2025/assignment-4-packages-and-shiny-apps-trishaandrea”)</p>
+</div>
+</div>
+<div class="section level1">
+<h1 id="launch-the-app">Launch the app<a class="anchor" aria-label="anchor" href="#launch-the-app"></a>
+</h1>
 <p>library(assignment4packages) run_app()</p>
 </div>
-<div class="section level2">
-<h2 id="access-and-summarize-the-data">Access and Summarize the Data<a class="anchor" aria-label="anchor" href="#access-and-summarize-the-data"></a>
-</h2>
+<div class="section level1">
+<h1 id="access-and-summarize-the-data">Access and Summarize the Data<a class="anchor" aria-label="anchor" href="#access-and-summarize-the-data"></a>
+</h1>
 <p>library(assignment4packages)</p>
-</div>
 <div class="section level2">
 <h2 id="load-the-packaged-dataset-path-and-read-it">Load the packaged dataset path and read it<a class="anchor" aria-label="anchor" href="#load-the-packaged-dataset-path-and-read-it"></a>
 </h2>
-<p>csv_path &lt;- system.file(“extdata”, “adjusted-name-combinations-list.csv”, package = “assignment4packages”) dat &lt;- read.csv(csv_path, check.names = FALSE)</p>
+<p>csv_path &lt;- system.file(“extdata”, “adjusted-name-combinations-list.csv”, package = “assignment4packages”)</p>
+<p>dat &lt;- read.csv(csv_path, check.names = FALSE)</p>
 </div>
 <div class="section level2">
 <h2 id="quick-summary-function-provided-in-the-package">Quick summary (function provided in the package)<a class="anchor" aria-label="anchor" href="#quick-summary-function-provided-in-the-package"></a>
@@ -83,12 +88,12 @@
 <p>dat &lt;- get_names_data() summarize_data(dat)</p>
 </div>
 </div>
+
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
 <li><a href="https://github.com/ETC5523-2025/assignment-4-packages-and-shiny-apps-trishaandrea/" class="external-link">Browse source code</a></li>
 <li><a href="https://github.com/ETC5523-2025/assignment-4-packages-and-shiny-apps-trishaandrea/issues" class="external-link">Report a bug</a></li>
-<li><a href="https://github.com/ETC5523-2025/assignment-4-packages-and-shiny-apps-trishaandrea" class="external-link">📦 Source code</a></li>
 <li><a href="https://trishaandrea.shinyapps.io/name-explorer/" class="external-link">🚀 Interactive app</a></li>
 </ul>
 </div>
