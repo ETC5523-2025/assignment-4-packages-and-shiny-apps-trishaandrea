@@ -8,6 +8,9 @@ Shiny app to explore name frequencies.
 
 📖 **Documentation website:** https://etc5523-2025.github.io/assignment-4-packages-and-shiny-apps-trishaandrea/
 
+🚀 **Interactive app:**  
+https://trishaandrea.shinyapps.io/name-explorer/
+
 ## Installation
 
 

@@ -10,10 +10,13 @@ Encoding: UTF-8
 LazyData: true
 Depends: R (>= 3.5)
 Imports:
+    assignment4packages,
     shiny,
     ggplot2,
     dplyr,
     bslib
+Remotes:
+    ETC5523-2025/assignment-4-packages-and-shiny-apps-trishaandrea
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
 URL: https://etc5523-2025.github.io/assignment-4-packages-and-shiny-apps-trishaandrea/

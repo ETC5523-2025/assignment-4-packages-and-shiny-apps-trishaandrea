@@ -1,0 +1,10 @@
+name: name-explorer
+title:
+username: trishaandrea
+account: trishaandrea
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 15878349
+bundleId: 11089554
+url: https://trishaandrea.shinyapps.io/name-explorer/
+version: 1

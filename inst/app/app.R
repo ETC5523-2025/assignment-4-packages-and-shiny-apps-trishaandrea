@@ -1,8 +1,15 @@
-library(shiny)
 library(ggplot2)
 library(dplyr)
 library(bslib)
+
+if (!requireNamespace("remotes", quietly = TRUE)) install.packages("remotes")
+if (!requireNamespace("assignment4packages", quietly = TRUE)) {
+  remotes::install_github("ETC5523-2025/assignment-4-packages-and-shiny-apps-trishaandrea")
+}
 library(assignment4packages)
+library(shiny)
+
+
 
 names_data <- get_names_data()
 
